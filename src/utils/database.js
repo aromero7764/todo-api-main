@@ -14,9 +14,11 @@ const db = new Sequelize({
 })
 
 db.authenticate()
-      .then(()=> console.log('Database Autenticada correctamente'))
-      .catch((err)=> {console.log(err)})
+    .then(() => console.log('Database Autenticada Correctamente'))
+    .catch((err) => console.log(err))
 
 db.sync()
-    .then(()=> console.log('database autenticada correctamente'))
-    .catch((err)=> {console.log(err)})
+    .then(() => console.log('Database Sincronizada Correctamente'))
+    .catch((err) => console.log(err))
+
+module.exports = db
