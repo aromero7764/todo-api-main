@@ -13,4 +13,6 @@ router.post('/todo', taskServices.postTodo)
 
 router.get('/todo/:id', taskServices.getTodoById)
 
+router.patch('/todo/:id', taskServices.patchTask)
+
 module.exports = router
